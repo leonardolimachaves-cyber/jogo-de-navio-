@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Batalha Naval 3D - Evolução & Chefão</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="overlay">
+    <h1>BATALHA NAVAL 3D</h1>
+    <p>Destrua navios inimigos para evoluir seu encouraçado. Ao atingir 4 abates, o Super Chefão entrará no oceano!</p>
+    <button id="start-btn">INICIAR COMBATE</button>
+  </div>
+
+  <div id="hud">
+    <h2>ENCOURAÇADO - NÍVEL <span id="lvl">1</span></h2>
+    <div class="stat"><span>Integridade (HP):</span> <span id="hp-text">1000 / 1000</span></div>
+    <div class="bar-bg"><div id="hp-bar"></div></div>
+    <div class="stat" style="margin-top:8px;"><span>Navios Abatidos:</span> <span id="kills">0</span></div>
+    <div class="stat"><span>Poder de Fogo:</span> <span id="dmg">150</span></div>
+    <div class="stat"><span>Velocidade:</span> <span id="spd">0 nós</span></div>
+  </div>
+
+  <div id="boss-hud">
+    <h3>⚠️ SUPER ENCOURAÇADO CHEFÃO ⚠️</h3>
+    <div class="bar-bg"><div id="boss-hp-bar"></div></div>
+  </div>
+
+  <div id="banner"></div>
+
+  <div id="controls">
+    <b>W / S</b>: Acelerar / Ré &nbsp;|&nbsp; <b>A / D</b>: Leme (Virar)<br>
+    <b>ESPAÇO</b> ou <b>CLIQUE</b>: Disparar Canhões &nbsp;|&nbsp; <b>Mouse</b>: Girar Câmera
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
